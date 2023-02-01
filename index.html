@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+    <div id="app">
+        <div class="calculator">
+            <div class="calculator-display">
+                <input type="text" name="result" id="result" placeholder="0" readonly class="auto-scaling-text"/>
+            </div>
+            <div class="calculator-keypad">
+                <div class="input-keys">
+                    <div class="function-keys">
+                        <input type="button" value="C" onclick="result.value=''" id="clear-button" class="calculator-key"/>
+                    </div>
+                    <div class="digit-keys">
+                        <input type="button" value="0" onclick="liveScreen(0)" class="calculator-key key-0"/>
+                        <input type="button" value="." onclick="liveScreen('.')" class="calculator-key"/>
+                        <input type="button" value="1" onclick="liveScreen(1)" class="calculator-key"/>
+                        <input type="button" value="2" onclick="liveScreen(2)" class="calculator-key"/>
+                        <input type="button" value="3" onclick="liveScreen(3)" class="calculator-key"/>
+                        <input type="button" value="4" onclick="liveScreen(4)" class="calculator-key"/>
+                        <input type="button" value="5" onclick="liveScreen(5)" class="calculator-key"/>
+                        <input type="button" value="6" onclick="liveScreen(6)" class="calculator-key"/>
+                        <input type="button" value="7" onclick="liveScreen(7)" class="calculator-key"/>
+                        <input type="button" value="8" onclick="liveScreen(8)" class="calculator-key"/>
+                        <input type="button" value="9" onclick=" liveScreen(9)" class="calculator-key"/>
+                    </div>
+                </div>
+                <div id="operator-keys">
+                    <input type="button" value="÷" onclick="liveScreen('/')" class="calculator-key"/>
+                    <input type="button" value="x" onclick="liveScreen('*')" class="calculator-key"/>
+                    <input type="button" value="-" onclick="liveScreen('-')" class="calculator-key"/>
+                    <input type="button" value="+" onclick="liveScreen('+')" class="calculator-key"/>
+                    <input type="button" value="=" onclick="calculate(result.value)" class="calculator-key key-result"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
