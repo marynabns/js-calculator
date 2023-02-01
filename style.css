@@ -30,7 +30,7 @@ button:active {
 
 #wrapper {
     height: 100vh;
-    background: url('../images/image4.jpg') no-repeat 50% 50%;
+    background: url('image4.jpg') no-repeat 50% 50%;
     background-size: cover;
     display: flex;
     align-items: center;
